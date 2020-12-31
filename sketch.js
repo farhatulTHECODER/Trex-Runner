@@ -49,9 +49,9 @@ function setup() {
   cloudsGroup = new Group();
   obstaclesGroup = new Group();
 
-hit = createAudio('hit.mp3');
-crash = createAudio('score.mp3');
-score = 0;
+  hit = createAudio('hit.mp3');
+  crash = createAudio('score.mp3');
+  score = 0;
 
 //desert = createSprite(200,200);
 //desert.addImage("desert",desert_img);
@@ -69,8 +69,8 @@ restart.visible = false;
 }
 
 function draw() {
-  background(desert_img);
-  text("Score: "+ score, 500,50);
+  background("#90ceeb");
+  text("Score: "+ score, 100,50);
  if(gameState === PLAY){  
   score = score + Math.round(getFrameRate()/60);
   
